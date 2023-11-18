@@ -29,7 +29,7 @@ class PlantDiseaseDataset(Dataset):
             pass
 
     def __len__(self):
-        return self.__image_labels
+        return len(self.__image_labels)
     
     def __getitem__(self, idx):
         path, label = self.__image_labels[idx]
